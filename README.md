@@ -7,6 +7,13 @@ A full-stack web application that allows users to browse books, read and write r
 
 ---
 
+## Important Links
+- [Portfolio](https://portfolio-shreyanshs1s-projects.vercel.app/)
+- [Github](https://github.com/Shreyanshs1)
+- [Repository](https://github.com/Shreyanshs1/Book-Review-Platform)
+- [LinkedIn](https://www.linkedin.com/in/shreyansh-srivastava-09b604226/)
+- Biggest Project(CareerArcade) [Github](https://github.com/Shreyanshs1/CareerArcade) [Demo](https://careerarcade.vercel.app/)
+
 ## 🚀 Features
 
 - Browse books with search and filter functionality
