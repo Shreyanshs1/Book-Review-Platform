@@ -17,3 +17,8 @@ export const fetchReviewsByBook = async (bookId) => {
   const res = await axios.get(`http://localhost:5000/reviews?bookId=${bookId}`);
   return res.data;
 };
+
+export const submitReview = async (reviewData) => {
+  const res = await axios.post('http://localhost:5000/reviews', reviewData);
+  return res.data;
+};

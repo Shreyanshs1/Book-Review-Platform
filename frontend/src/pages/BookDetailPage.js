@@ -1,6 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { fetchBookById, fetchReviewsByBook } from '../api/bookApi';
+import { useUser } from '../context/UserContext';
+import { submitReview } from '../api/bookApi';
+import AddReviewForm from '../components/AddReviewForm';
+
 
 export default function BookDetailPage() {
   const { id } = useParams();
@@ -56,6 +60,10 @@ export default function BookDetailPage() {
           ))}
         </ul>
       )}
+      <AddReviewForm
+  bookId={book._id}
+  onReviewAdded={(updated) => setReviews(updated)}
+/>
     </div>
   );
 }
