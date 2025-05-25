@@ -22,3 +22,13 @@ export const submitReview = async (reviewData) => {
   const res = await axios.post('http://localhost:5000/reviews', reviewData);
   return res.data;
 };
+
+export const getUserById = async (id) => {
+  const res = await axios.get(`${API_URL}/users/${id}`);
+  return res.data;
+};
+
+export const updateUserById = async (id, updatedData) => {
+  const res = await axios.put(`${API_URL}/users/${id}`, updatedData);
+  return res.data;
+};
