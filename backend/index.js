@@ -5,6 +5,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import bookRoutes from './routes/bookRoutes.js';
 import reviewRoutes from './routes/reviewRoutes.js';
+import userRoutes from './routes/userRoutes.js';
 
 dotenv.config();
 
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 });
 app.use('/books', bookRoutes);
 app.use('/reviews', reviewRoutes);
+app.use('/users', userRoutes);
 
 // Connect to MongoDB and start server
 const PORT = process.env.PORT || 5000;
