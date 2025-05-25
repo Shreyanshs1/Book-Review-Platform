@@ -4,6 +4,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import bookRoutes from './routes/bookRoutes.js';
+import reviewRoutes from './routes/reviewRoutes.js';
 
 dotenv.config();
 
@@ -18,6 +19,8 @@ app.get('/', (req, res) => {
   res.send('Book Review API is running');
 });
 app.use('/books', bookRoutes);
+app.use('/reviews', reviewRoutes);
+
 // Connect to MongoDB and start server
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
