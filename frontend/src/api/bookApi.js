@@ -7,3 +7,13 @@ export const fetchBooks = async (page = 1) => {
   const res = await axios.get(`${API_URL}/books?page=${page}`);
   return res.data;
 };
+
+export const fetchBookById = async (id) => {
+  const res = await axios.get(`http://localhost:5000/books/${id}`);
+  return res.data;
+};
+
+export const fetchReviewsByBook = async (bookId) => {
+  const res = await axios.get(`http://localhost:5000/reviews?bookId=${bookId}`);
+  return res.data;
+};
