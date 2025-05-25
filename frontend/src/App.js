@@ -5,10 +5,12 @@ import BookListPage from './pages/BookListPage';
 import BookDetailPage from './pages/BookDetailPage';
 import UserProfilePage from './pages/UserProfilePage';
 import ReviewFormPage from './pages/ReviewFormPage';
+import Navbar from './components/Navbar.js';
 
 function App() {
   return (
     <Router>
+      <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/books" element={<BookListPage />} />
